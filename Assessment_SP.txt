@@ -43,12 +43,9 @@ The results are grouped by Order Day, Employee, Customer and Shipper using the G
 
 To execute this stored procedure, you would use the following syntax:
 
-sql
-Copy code
 EXEC pr_GetOrderSummary 
     @StartDate = '1996-07-04', 
     @EndDate = '1996-07-08', 
     @EmployeeID = NULL, 
     @CustomerID = NULL
 Where @StartDate and @EndDate are the start and end dates of the order period, and @EmployeeID and @CustomerID are optional parameters to filter the results by a specific employee or customer.
-
