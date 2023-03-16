@@ -1,0 +1,15 @@
+I had attempted several times to install SQL Server Management studio 2022 and 2019 without any success and constantly getting an error i've never encountered before. After much online research it seems others have encountered this same issue on windows 11 with no clear fix. As such I was not able to write my stored procedure in SQL studio and provide install steps. However I wrote in down in a txt and attached it in this file.
+
+
+Regarding the code:
+
+I have added comments in the payout method of the RouletteController as to what it's full implemenation would be in a full scale application.
+
+I have included all the Bet Types found in Roulette, however some of these types would require much more in-depth inplementation to be used accurately. ie Corner,Split, etc
+
+I have also included some basic unit tests, although this can be done much more extensively
+
+INSTRUCTIONS:
+
+Whenever choosing the Bet Types [Even,Odd,High,Low,Red,Black] please enter the bet type as a string into the value field instead of a number. ie Value -> "red"
+Whenever using other Bet Types, please enter the number that you would choose on the Roulette Table for the value. ie a StraightUp bet on 22 Value -> 22
