@@ -10,7 +10,7 @@ namespace RouletteAPI4
         Split = 2,
         Street = 3,
         Corner = 4,
-        FiveNumber = 5
+        FiveNumber = 5,
         Line = 6,
         Dozen = 7,
         Column = 8,
