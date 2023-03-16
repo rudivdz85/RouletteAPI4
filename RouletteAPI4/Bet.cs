@@ -6,17 +6,17 @@ namespace RouletteAPI4
 {
     public enum BetType
     {
-        StraightUp = 1,//
-        Split = 2,//
-        Street = 3,//
-        Corner = 4,//
-        FiveNumber = 5,//
-        Line = 6,//
-        Dozen = 7,//
-        Column = 8,//
-        EvenMoney = 9,//
-        Red = 10,//
-        Black = 11,//
+        StraightUp = 1,
+        Split = 2,
+        Street = 3,
+        Corner = 4,
+        FiveNumber = 5
+        Line = 6,
+        Dozen = 7,
+        Column = 8,
+        EvenMoney = 9,
+        Red = 10,
+        Black = 11,
         Low = 12,
         High = 13,
         Odd = 14,
