@@ -1,4 +1,5 @@
-﻿using System.Data.Entity.Core.Metadata.Edm;
+﻿using System;
+using System.Data.Entity.Core.Metadata.Edm;
 
 
 namespace RouletteAPI4
@@ -34,6 +35,8 @@ namespace RouletteAPI4
 
         public Bet(string playerId, decimal amount, BetType type, string value)
         {
+            Random random = new Random();
+            Id = random.Next(0, 999999);
             PlayerId = playerId;
             Amount = amount;
             Type = type;

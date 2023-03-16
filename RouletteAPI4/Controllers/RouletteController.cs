@@ -21,6 +21,13 @@ public class RouletteController : ControllerBase
             return Ok(new { message = "Saved Bets: " + game.GetSavedBetsFromDB() });
         }
 
+        [HttpGet]
+        [Route("GetCurrentBets")]
+        public IActionResult GetCurrentBets()
+        {
+            return Ok(new { message = "Current Bets: " + DisplayCurrentBets() });
+        }
+
         [HttpDelete]
         [Route("ClearAllBetsFromDB")]
         public IActionResult ClearBetsFromDB()
@@ -105,7 +112,19 @@ public class RouletteController : ControllerBase
             return betDisplay;
         }
 
-      
+        private string DisplayCurrentBets()
+        {
+            string betDisplay = "";
+
+            foreach (Bet bet in game.GetBets())
+            {
+                betDisplay += "Player " + bet.PlayerId + " Current bet amount for bet ID " + bet.Id + " is " + bet.Amount + ". ";
+            }
+
+            return betDisplay;
+        }
+
+
     }
 
 }
