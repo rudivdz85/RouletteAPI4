@@ -121,6 +121,11 @@ public class RouletteController : ControllerBase
                 betDisplay += "Player " + bet.PlayerId + " Current bet amount for bet ID " + bet.Id + " is " + bet.Amount + ". ";
             }
 
+            if (betDisplay == "")
+            {
+                return "No Current Bets made";
+            }
+
             return betDisplay;
         }
 
